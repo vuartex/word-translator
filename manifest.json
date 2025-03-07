@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Kelime Çeviri Eklentisi",
+  "version": "1.0",
+  "description": "Seçtiğiniz dilde kelime öğrenin ve çevirisini görün.",
+  "permissions": ["storage", "tabs"],
+ "host_permissions": [
+  "https://script.google.com/*",
+  "https://babelnet.io/*",
+  "https://word-plugin.gokhan-gkz1742.workers.dev/*"
+]
+,
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "options_page": "options.html"
+}

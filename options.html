@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kelime Çeviri Ayarları</title>
+    <script src="options.js" defer></script>
+</head>
+<body>
+    <h1>Ayarlar</h1>
+    <label for="targetLang">Öğrenmek İstediğiniz Dil:</label>
+    <select id="targetLang">
+        <option value="en">İngilizce</option>
+        <option value="de">Almanca</option>
+        <option value="fr">Fransızca</option>
+        <option value="it">İtalyanca</option>
+    </select>
+    <br>
+    <label for="sourceLang">Kendi Diliniz:</label>
+    <select id="sourceLang">
+        <option value="tr">Türkçe</option>
+        <option value="en">İngilizce</option>
+    </select>
+    <br>
+    <label for="apiKey">BabelNet API Anahtarınız:</label>
+    <input type="text" id="apiKey" placeholder="API Anahtarınızı girin">
+    <p>
+      API anahtarınızı almak için <a href="https://babelnet.org/register" target="_blank">buraya tıklayın</a>.<br>
+      Not: BabelNet API, günlük 1000 istek hakkı vermektedir. Kendi API anahtarınızı girmediğiniz takdirde, 
+      aşağıdaki built-in API seçeneklerinden varsayılan olarak API‑1 (21ee75cf-c812-4594-947e-c0f29fe51518) kullanılacaktır. Token limiti dolduğunda otomatik olarak API‑2 (3401d497-8fbf-48b6-8a2b-25e888061a7c) ve ardından API‑3 (0f6410ae-63df-49da-ae8e-68870a3ff643) kullanılacaktır.
+    </p>
+    <br>
+    <label>Built-in API Seçimi:</label>
+    <br>
+    <input type="radio" name="builtinApi" id="api1" value="api1" checked>
+    <label for="api1">API‑1 (21****cf-c812-4594-947e-c0f****518)</label>
+    <br>
+    <input type="radio" name="builtinApi" id="api2" value="api2">
+    <label for="api2">API‑2 (340***97-8fbf-****-8a2b-25****061a7c)</label>
+    <br>
+    <input type="radio" name="builtinApi" id="api3" value="api3">
+    <label for="api3">API‑3 (0f*****-63df-49da-ae8e-6*****f643)</label>
+    <br><br>
+    <button id="save">Kaydet</button>
+    <hr>
+    <p><a href="https://github.com/vuartex" target="_blank">Hakkında</a></p>
+</body>
+</html>
